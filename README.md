@@ -8,7 +8,3 @@ First the data is available <a href="https://www.kaggle.com/datasets/mlg-ulb/cre
 > pip install -r requirements.txt
 
 Then you can just execute the various **.ipynb** notebooks.
-  
-# Results
-  
-The results will be summarized in a report.
