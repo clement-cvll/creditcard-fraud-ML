@@ -1,10 +1,20 @@
 # Context
-This is a personal project to improve my machine learning, data visualisation and various other skills.
+This is a personal project to improve my machine learning, data visualisation and various other skills on the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
 # How to execute
 
-First the data is available <a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download">here<a/>. You need to download the .csv and put it in the  repository, then you need to install the **requirements.txt** (better with a virtual env.) via 
+You can run the Python scripts directly using `uv`, which handles dependencies automatically. To run the classification pipeline:
 
-> pip install -r requirements.txt
+```bash
+uv run classification.py
+```
 
-Then you can just execute the **.ipynb** notebooks, there are three notebooks: **1. data-exploration.ipynb** for the first analysis, **2. ml-pipeline.ipynb** for the machine learning approach with scikit-learn and **3. neural-network.ipynb** for the neural network approach with tensorflow.
+*Note: The script automatically downloads the Kaggle dataset using `kagglehub`, so you don't need to download it manually.*
+
+### Files & Notebooks
+
+* **classification.py**: A LightGBM pipeline that handles extreme class imbalance (578:1). It features automated hyperparameter tuning via **Optuna** (using early-stopping pruning mapped to a custom **PR-AUC** metric).
+* **Archives/**: Contains previous attempts and experiments.
+    * **1. data-exploration.ipynb**: First analysis and EDA.
+    * **2. ml-pipeline.ipynb**: Machine learning approach with scikit-learn.
+    * **3. neural-network.ipynb**: Neural network approach with TensorFlow.

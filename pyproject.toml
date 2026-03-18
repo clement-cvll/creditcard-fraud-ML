@@ -1,0 +1,16 @@
+[project]
+name = "creditcard-fraud-ml-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "kagglehub>=1.0.0",
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.10.8",
+    "optuna>=4.8.0",
+    "optuna-integration[lightgbm]>=4.8.0",
+    "polars>=1.39.2",
+    "scikit-learn>=1.8.0",
+]
