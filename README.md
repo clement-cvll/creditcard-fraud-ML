@@ -14,7 +14,7 @@ uv run classification.py
 ### Files & Notebooks
 
 * **classification.py**: A LightGBM pipeline that handles extreme class imbalance (578:1). It features automated hyperparameter tuning via **Optuna** (using early-stopping pruning mapped to a custom **PR-AUC** metric).
-* **Archives/**: Contains previous attempts and experiments.
+* **archive/**: Contains previous attempts and experiments.
     * **1. data-exploration.ipynb**: First analysis and EDA.
     * **2. ml-pipeline.ipynb**: Machine learning approach with scikit-learn.
     * **3. neural-network.ipynb**: Neural network approach with TensorFlow.
