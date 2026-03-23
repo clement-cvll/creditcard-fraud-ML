@@ -39,22 +39,6 @@ wheels = [
 ]
 
 [[package]]
-name = "bayesian-optimization"
-version = "3.2.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "colorama" },
-    { name = "numpy" },
-    { name = "packaging" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3c/96/67728f254c3aa4b64011d663dcc349712cb11530287b2187a34d00a34c7b/bayesian_optimization-3.2.1.tar.gz", hash = "sha256:75a1d8be78b862dd8a75944622a52956f8b3f0c3c2db43284c87e0347aac78e9", size = 32129 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c2/51/23705598b6bf4c62ed91464e99cf2a80289cb694a4b4f6f26b8596ac2acb/bayesian_optimization-3.2.1-py3-none-any.whl", hash = "sha256:3da77ad606edd40d97f22597c3e7d68beae0f5368569b7beb7c38fb6444d097c", size = 37268 },
-]
-
-[[package]]
 name = "certifi"
 version = "2026.2.25"
 source = { registry = "https://pypi.org/simple" }
@@ -294,7 +278,6 @@ name = "creditcard-fraud-ml-1"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "bayesian-optimization" },
     { name = "ipykernel" },
     { name = "kagglehub" },
     { name = "lightgbm" },
@@ -307,7 +290,6 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bayesian-optimization", specifier = ">=3.2.1" },
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "kagglehub", specifier = ">=1.0.0" },
     { name = "lightgbm", specifier = ">=4.6.0" },

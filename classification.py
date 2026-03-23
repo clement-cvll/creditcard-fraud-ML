@@ -22,7 +22,6 @@ optuna.logging.set_verbosity(optuna.logging.WARNING)
 
 # ── Constants ────────────────────────────────────────────────────────────────
 RANDOM_STATE = 42
-N_ESTIMATORS = 2000
 EARLY_STOPPING_ROUNDS = 100
 N_TRIALS = 100
 
@@ -59,7 +58,7 @@ def make_fixed_params(fraud_weight):
         "n_jobs": -1,
         "verbosity": -1,
         "random_state": RANDOM_STATE,
-        "n_estimators": N_ESTIMATORS,
+        "n_estimators": 10000,  # Rely entirely on early stopping
     }
 
 
